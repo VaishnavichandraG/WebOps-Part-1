@@ -1,3 +1,5 @@
-First part of the technical questionaire
+### Technical questionaire
 
-Each question under this is in a different file
+All the sub questions under part1 are in the file named part1.html
+
+All the sub questions under part2 are in the file named part2.html
