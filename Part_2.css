@@ -1,0 +1,158 @@
+/* Positioning and designing the  loader animation */
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 120px;
+  height: 120px;
+  margin: -76px 0 0 -76px;
+  border: 16px solid #f3f3f3;
+  border-radius: 0%;
+  border-top: 16px solid blue;
+  border-right: 16px solid green;
+  border-bottom: 16px solid red;
+  border-left: 16px solid pink;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Adding the loader animation to the webpage */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  text-align: left;
+}
+/* Setting the background colour for the webpage */
+body {
+  background-color: beige;
+}
+/* Designing and defining the structure of the navbar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: silver;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+  font-size: 25px;
+}
+
+ .logo-image{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: -6px;
+}
+
+/*Tooltip container*/
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+/*Tooltip text*/
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 5px;
+
+  /*Position of tooltip text*/
+  position: absolute;
+  z-index: 1;
+  width: 120px;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+/* Setting the bullet design of the unordered list */
+ul li::marker {
+  color: #04AA6D;
+  content: "➼ ";
+}
+
+ul li:hover::marker {
+  content: "✔ ";
+}
+
+ul li {
+  font-size: 20px;
+}
+
+section {
+  margin-left: 30px;
+}
+
+h1 {
+  font-size: 30px;
+  color: #04AA6D;
+}
+
+.a {
+  font-weight: bold;
+}
+
+.b {
+  font-family: "Andale Mono", monospace;
+  text-decoration: underline;
+}
+
+.c {
+  font-family: Lobster;
+}
+
+.d {
+  font-style: italic;
+}
