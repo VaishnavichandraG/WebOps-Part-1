@@ -1,0 +1,78 @@
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css"><!-- importing font from google fonts -->
+
+<body onload="myFunction()" style="margin:0;">
+  
+  <!-- for the loading animation -->
+  <div id="loader"></div>
+
+  <!-- for the navbar -->
+  <div style="display:none;" id="myDiv" class="animate-bottom">
+  <div class="topnav">
+    <a class="navbar-brand">
+      <div class="logo-image"><!-- to insert the logo image -->
+            <img src="https://www.heliumcreative.com/wp-content/uploads/2017/04/biota-1-768x576.jpg" alt=" " width="40px" height="40px">
+      </div>
+    </a>
+    <!-- Includes the tooltip defining class for every link in the navbar -->
+    <aside><div><a class="active tooltip" href="#learnaqua">LearnAqua</a>
+      <span class="tooltiptext" ></spam></div></aside>
+  
+    <a href="#opportunities"><div class="tooltip">Opportunities
+      <span class="tooltiptext">Discover</span>
+    </div></a>
+  
+    <a href="#aboutus"><div class="tooltip">About Us
+      <span class="tooltiptext">Know more</span>
+    </div></a>
+  
+    <a href="#aboutus"><div class="tooltip">Contact Us
+      <span class="tooltiptext">Details</span>
+    </div></a>
+  </div>
+  
+  <!-- for the list -->
+  <section>
+    <h1>Explore the Babbling Blues</h1>
+  
+    <ul class="a">
+      <li>Aqua Jogging</li>
+      <li>Boat Race</li>
+      <li>Canoe Polo</li>
+      <li>Finswimming</li>
+      <li>Fishing</li></ul>
+    <ul class="b">
+      <li>Jet Skiing</li>
+      <li>Kayaking</li>
+      <li>Kiteboating</li>
+      <li>Para-Sailing</li>
+      <li>River Rafting</li></ul>
+    <ul class="c">
+      <li>Sailing</li>
+      <li>Scuba Diving</li>
+      <li>Skimboarding</li>
+      <li>Snorkeling</li>
+      <li>Surfing</li></ul>
+    <ul class="d">
+      <li>Triathlon</li>
+      <li>Water Aerobics</li>
+      <li>Water Polo</li>
+      <li>Water Skating</li>
+      <li>Yatching</li></ul>
+      
+      </section>
+</div>
+
+<script>
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
+
+</body>
